@@ -1,5 +1,5 @@
 
-# Návrh číslicových systémů První část projektu – Návrh obvodu
+# Návrh číslicových systémů Druhá část projektu – Implementace a ladění
 
 Cílem projektu je získat základní dovednosti potřebné pro návrh a implementaci číslicových 
 obvodů. Naučit se tyto obvody správně popisovat v jazyce VHDL a získat zkušenosti s jejich 
