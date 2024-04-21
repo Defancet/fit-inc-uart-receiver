@@ -1,19 +1,16 @@
+# INC UART Receiver Project
 
-# Návrh číslicových systémů Druhá část projektu – Implementace a ladění
+## Author
+- **Name:** Maksim Kalutski
+- **Login:** xkalut00
 
-Cílem projektu je získat základní dovednosti potřebné pro návrh a implementaci číslicových 
-obvodů. Naučit se tyto obvody správně popisovat v jazyce VHDL a získat zkušenosti s jejich 
-simulací a syntézou s využitím profesionálních nástrojů.
+## Project Overview
 
-Jako zvolený příklad komponenty, na které uvedené dovednosti získáte, nám poslouží
-komponenta pro příjem a vysílaní dat po asynchronní sériové lince (anglicky UART –
-Universal Asynchronous Receiver-Transmitter). 
+This project focuses on developing and implementing a UART (Universal Asynchronous Receiver-Transmitter) receiver part using VHDL. The primary objective is to gain fundamental skills necessary for designing and simulating digital circuits using professional tools.
 
-Pro jednoduchost budeme v projektu vytvářet pouze vybranou část UART řadiče, konkrétněji 
-se zaměříme na přijímací část. Ta je zodpovědná za zpracování dat ze sériové linky a jejich 
-rekonstrukci (deserializaci jednotlivých bitů). V porovnání s plnohodnotným řadičem UART
-budeme uvažovat i řadu dalších zjednodušení, aby celková složitost vypracování projektu 
-nebyla velká.
+## Files Description
 
-Vypracování projektu je rozděleno na dvě části. V první části jde o návrh fungování obvodu 
-na úrovni RTL a také logiky jeho řídícího automatu.
+- `uart.vhdl` - Contains the UART receiver's VHDL code focusing on data reception and processing from the serial link.
+- `uart_fsm.vhdl` - Contains the VHDL code for the finite state machine (FSM) controlling the UART receiver logic.
+- `zadini.pdf` - Provides detailed project guidelines and specifications in Czech.
+- `zprava.pdf` - design report for the UART receiver project.
