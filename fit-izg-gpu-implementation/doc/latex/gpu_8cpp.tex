@@ -1,0 +1,62 @@
+\hypertarget{gpu_8cpp}{}\doxysection{student/gpu.cpp File Reference}
+\label{gpu_8cpp}\index{student/gpu.cpp@{student/gpu.cpp}}
+
+
+This file contains implementation of gpu.  
+
+
+{\ttfamily \#include $<$student/gpu.\+hpp$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{gpu_8cpp_a59ea66aa0570ba98e82abbd82433b194}{gpu\+\_\+execute}} (\mbox{\hyperlink{structGPUMemory}{GPUMemory}} \&mem, \mbox{\hyperlink{structCommandBuffer}{Command\+Buffer}} \&cb)
+\begin{DoxyCompactList}\small\item\em \mbox{[}gpu\+\_\+execute\mbox{]} \end{DoxyCompactList}\item 
+glm\+::vec4 \mbox{\hyperlink{gpu_8cpp_abf6cca928d7eb5a455aed9776b59aaee}{read\+\_\+texture}} (\mbox{\hyperlink{structTexture}{Texture}} const \&texture, glm\+::vec2 uv)
+\begin{DoxyCompactList}\small\item\em \mbox{[}gpu\+\_\+execute\mbox{]} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains implementation of gpu. 
+
+\begin{DoxyAuthor}{Author}
+Tomáš Milet, \href{mailto:imilet@fit.vutbr.cz}{\texttt{ imilet@fit.\+vutbr.\+cz}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{gpu_8cpp_a59ea66aa0570ba98e82abbd82433b194}\label{gpu_8cpp_a59ea66aa0570ba98e82abbd82433b194}} 
+\index{gpu.cpp@{gpu.cpp}!gpu\_execute@{gpu\_execute}}
+\index{gpu\_execute@{gpu\_execute}!gpu.cpp@{gpu.cpp}}
+\doxysubsubsection{\texorpdfstring{gpu\_execute()}{gpu\_execute()}}
+{\footnotesize\ttfamily void gpu\+\_\+execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGPUMemory}{GPUMemory}} \&}]{mem,  }\item[{\mbox{\hyperlink{structCommandBuffer}{Command\+Buffer}} \&}]{cb }\end{DoxyParamCaption})}
+
+
+
+\mbox{[}gpu\+\_\+execute\mbox{]} 
+
+function that executes work stored in command buffer on the gpu memory. This function represents the functionality of GPU. It can render stuff, it can clear framebuffer. It can process work stored in command buffer \begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000004}{Todo}}]Tato funkce reprezentuje funkcionalitu grafické karty.~\newline
+ Měla by umět zpracovat command buffer, čistit framebuffer a kresli.~\newline
+ mem obsahuje paměť grafické karty. cb obsahuje command buffer pro zpracování. Bližší informace jsou uvedeny na hlavní stránce dokumentace. \end{DoxyRefDesc}
+\mbox{\Hypertarget{gpu_8cpp_abf6cca928d7eb5a455aed9776b59aaee}\label{gpu_8cpp_abf6cca928d7eb5a455aed9776b59aaee}} 
+\index{gpu.cpp@{gpu.cpp}!read\_texture@{read\_texture}}
+\index{read\_texture@{read\_texture}!gpu.cpp@{gpu.cpp}}
+\doxysubsubsection{\texorpdfstring{read\_texture()}{read\_texture()}}
+{\footnotesize\ttfamily glm\+::vec4 read\+\_\+texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTexture}{Texture}} const \&}]{texture,  }\item[{glm\+::vec2}]{uv }\end{DoxyParamCaption})}
+
+
+
+\mbox{[}gpu\+\_\+execute\mbox{]} 
+
+This function reads color from texture.
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & texture \\
+\hline
+{\em uv} & uv coordinates\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+color 4 floats 
+\end{DoxyReturn}
